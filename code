@@ -1,0 +1,51 @@
+var MyObject = new Person("Dima", 34, "Brown");//1 task
+
+function Person(name, age, hair) {//2 task
+  this.name = name;
+  this.age=age;
+  this.hair=hair;
+
+ this.whatAreYou = function() {
+        return '' + this.name;
+    }
+}
+
+console.log(MyObject.whatAreYou());
+
+var arr = new Array();//3 task
+var arr = [5];
+
+for (var i=1;i<=5;i++) {//4 task
+  
+  arr[i]=i;
+  
+   console.log("MyArray"+"["+[i-1]+"]")
+}
+   
+   for (var i=1;i<=100;i++) {//5 task
+     
+     if(i%3===0&&i%5===0) {
+       
+       console.log("FizzBuzz");
+     }
+       else{
+         
+         if(i%5===0){
+           
+       console.log('Buzz');
+           
+         }
+         else{
+           
+           if(i%3===0){
+             
+             console.log('Fizz');
+           
+           }
+         }
+     }
+     
+     if(i%3==false)continue;
+     if(i%5==false)continue;
+       console.log(i);
+}
